@@ -76,7 +76,7 @@ namespace EverydayClipping {
             this.linkLabel4.Font = new System.Drawing.Font("方正屏显雅宋_GBK", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.linkLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkLabel4.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel4.Location = new System.Drawing.Point(12, 203);
+            this.linkLabel4.Location = new System.Drawing.Point(12, 205);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(597, 61);
             this.linkLabel4.TabIndex = 3;
@@ -92,9 +92,9 @@ namespace EverydayClipping {
             this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel5.ForeColor = System.Drawing.Color.Fuchsia;
             this.linkLabel5.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel5.Location = new System.Drawing.Point(17, 206);
+            this.linkLabel5.Location = new System.Drawing.Point(18, 207);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(55, 52);
+            this.linkLabel5.Size = new System.Drawing.Size(53, 51);
             this.linkLabel5.TabIndex = 4;
             this.linkLabel5.Text = "▶";
             this.linkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,13 +108,15 @@ namespace EverydayClipping {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(621, 274);
-            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EverydayClipping";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
