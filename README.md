@@ -18,11 +18,11 @@ Recommended to view with [SQLite Expert](http://www.sqliteexpert.com/).
 - [方正屏显雅宋_GBK](http://www.foundertype.com/index.php/FontInfo/index/id/402.html): Authorized for non-commercial use.
 
 ## Code Implementation
-Randomly select one record: 
-```SQL
+### Randomly select one record: 
+```sql
   SELECT * FROM clippings ORDER BY random() LIMIT 1
 ```
-
+### Full Code
 ```c#
   var cn = new SQLiteConnection(ConnStr);
   cn.Open();
