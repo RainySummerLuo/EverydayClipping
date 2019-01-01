@@ -8,3 +8,7 @@ Recommended to view with [SQLite Expert](http://www.sqliteexpert.com/).
 
 ## Packages
 - System.Data.SQLite: https://www.nuget.org/packages/System.Data.SQLite
+)
+## GUI
+### Font
+- [方正屏显雅宋_GBK](http://www.foundertype.com/index.php/FontInfo/index/id/402.html): Authorized for non-commercial use.
