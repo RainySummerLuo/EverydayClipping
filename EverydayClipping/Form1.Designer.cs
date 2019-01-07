@@ -35,14 +35,14 @@ namespace EverydayClipping {
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Font = new System.Drawing.Font("方正屏显雅宋_GBK", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel1.Font = new System.Drawing.Font("方正屏显雅宋_GBK", 16F);
             this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel1.Location = new System.Drawing.Point(61, 34);
+            this.linkLabel1.Location = new System.Drawing.Point(62, 34);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(483, 156);
             this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.Text = "不要回答！不要回答！不要回答！";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -52,7 +52,7 @@ namespace EverydayClipping {
             this.linkLabel2.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.ForeColor = System.Drawing.Color.Fuchsia;
             this.linkLabel2.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel2.Location = new System.Drawing.Point(5, 9);
+            this.linkLabel2.Location = new System.Drawing.Point(5, 5);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(59, 68);
             this.linkLabel2.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace EverydayClipping {
             this.linkLabel3.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.ForeColor = System.Drawing.Color.Fuchsia;
             this.linkLabel3.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel3.Location = new System.Drawing.Point(550, 161);
+            this.linkLabel3.Location = new System.Drawing.Point(535, 169);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(59, 68);
             this.linkLabel3.TabIndex = 2;
@@ -76,9 +76,9 @@ namespace EverydayClipping {
             this.linkLabel4.Font = new System.Drawing.Font("方正屏显雅宋_GBK", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.linkLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkLabel4.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
-            this.linkLabel4.Location = new System.Drawing.Point(12, 205);
+            this.linkLabel4.Location = new System.Drawing.Point(2, 205);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(597, 61);
+            this.linkLabel4.Size = new System.Drawing.Size(593, 61);
             this.linkLabel4.TabIndex = 3;
             this.linkLabel4.Text = "—— 刘慈欣，《三体》";
             this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -107,12 +107,13 @@ namespace EverydayClipping {
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(621, 274);
+            this.ClientSize = new System.Drawing.Size(599, 270);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

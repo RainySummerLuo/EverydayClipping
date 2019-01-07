@@ -38,10 +38,6 @@ namespace EverydayClipping {
 
         }
 
-        private void button1_Click(object sender, EventArgs e) {
-
-        }
-
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             
         }
