@@ -22,12 +22,20 @@ namespace EverydayClipping {
             linkLabel1.Text = sr.GetInt32(0).ToString();
             sr.Close();
             */
-            cmd.CommandText = "SELECT * FROM clippings ORDER BY random() LIMIT 1";
-            var sr = cmd.ExecuteReader();
-            sr.Read();
-            linkLabel1.Text = sr.GetString(1);
-            linkLabel4.Text = @"—— " + sr.GetString(3) + @", 《" + sr.GetString(2) +@"》";
-            sr.Close();
+            string strRead, strRead2, strRead3;
+            do
+            {
+                cmd.CommandText = "SELECT * FROM clippings ORDER BY random() LIMIT 1";
+                var sr = cmd.ExecuteReader();
+                sr.Read();
+                strRead = sr.GetString(1);
+                strRead2 = sr.GetString(2);
+                strRead3 = sr.GetString(3);
+                sr.Close();
+            } while (strRead.Length > 60);
+            linkLabel1.Text = strRead;
+            linkLabel4.Text = @"—— " + strRead3 + @", 《" + strRead2 + @"》";
+            cn.Close();
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
@@ -50,12 +58,20 @@ namespace EverydayClipping {
             var cn = new SQLiteConnection(ConnStr);
             cn.Open();
             var cmd = cn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM clippings ORDER BY random() LIMIT 1";
-            var sr = cmd.ExecuteReader();
-            sr.Read();
-            linkLabel1.Text = sr.GetString(1);
-            linkLabel4.Text = @"—— " + sr.GetString(3) + @", 《" + sr.GetString(2) +@"》";
-            sr.Close();
+            string strRead, strRead2, strRead3;
+            do
+            {
+                cmd.CommandText = "SELECT * FROM clippings ORDER BY random() LIMIT 1";
+                var sr = cmd.ExecuteReader();
+                sr.Read();
+                strRead = sr.GetString(1);
+                strRead2 = sr.GetString(2);
+                strRead3 = sr.GetString(3);
+                sr.Close();
+            } while (strRead.Length > 60);
+            linkLabel1.Text = strRead;
+            linkLabel4.Text = @"—— " + strRead3 + @", 《" + strRead2 + @"》";
+            cn.Close();
         }
     }
 }
